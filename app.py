@@ -1,4 +1,4 @@
-#import joblib
+import joblib
 import streamlit as st
 
 # Load the saved model and vectorizer
