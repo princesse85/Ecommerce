@@ -1,9 +1,11 @@
 import streamlit as st
-#import joblib
+
 
 # ✅ Load the saved model and vectorizer
 #model = joblib.load('sentiment_model.pkl')
-#vectorizer = joblib.load('tfidf_vectorizer.pkl')
+from joblib import load
+sentiment_model = load(model_file)
+vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
 def predict_sentiment(text):
     # Transform the input text using the TF-IDF vectorizer
