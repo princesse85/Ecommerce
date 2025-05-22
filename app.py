@@ -24,7 +24,7 @@ user_input = st.text_area("Enter a review:")
 if st.button("Analyze Sentiment"):
     if user_input:
         # Get the raw prediction string from the model
-        prediction = predict_sentiment(user_input)
+        #prediction = predict_sentiment(user_input)
 
         # If the model returns "Positive" or "Negative"
         if prediction == "Positive":
