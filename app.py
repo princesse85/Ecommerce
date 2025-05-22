@@ -21,7 +21,7 @@ user_input = st.text_area("🗣️ Enter a review:")
 # 🔍 Prediction button
 if st.button("Analyze Sentiment"):
     if user_input:
-        prediction = predict_sentiment(user_input)
+       # prediction = predict_sentiment(user_input)
         if prediction == 1 or prediction == "Positive":
             st.success("✅ Sentiment: Positive 😊")
         else:
