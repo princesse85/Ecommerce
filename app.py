@@ -14,7 +14,7 @@ def predict_sentiment(text):
 
 # Quick console test
 sample_text = "i love it"
-print("Predicted Sentiment:", predict_sentiment(sample_text))
+#print("Predicted Sentiment:", predict_sentiment(sample_text))
 
 # Streamlit app
 st.title("E-commerce Sentiment Analysis")
