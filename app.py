@@ -27,7 +27,7 @@ if st.button("Analyze Sentiment"):
         #prediction = predict_sentiment(user_input)
 
         # If the model returns "Positive" or "Negative"
-        if prediction == "Positive":
+       # if prediction == "Positive":
             st.success("Sentiment: Positive 😊")
         else:
-            st.error("Sentiment: Negative 😠")
+         #   st.error("Sentiment: Negative 😠")
