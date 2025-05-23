@@ -1,9 +1,10 @@
 import streamlit as st
+from joblib import load
 
 
 # ✅ Load the saved model and vectorizer
 #model = joblib.load('sentiment_model.pkl')
-from joblib import load
+
 sentiment_model = load(model_file)
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
 
