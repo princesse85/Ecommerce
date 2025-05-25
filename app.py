@@ -3,7 +3,7 @@ from joblib import load
 
 
 # ✅ Load the saved model and vectorizer
-#model = joblib.load('sentiment_model.pkl')
+model = joblib.load('sentiment_model.pkl')
 
 sentiment_model = load(model_file)
 vectorizer = joblib.load('tfidf_vectorizer.pkl')
@@ -24,10 +24,10 @@ user_input = st.text_area("🗣️ Enter a review:")
 # 🔍 Prediction button
 if st.button("Analyze Sentiment"):
     if user_input:
-       # prediction = predict_sentiment(user_input)
-       # if prediction == 1 or prediction == "Positive":
+        prediction = predict_sentiment(user_input)
+       if prediction == 1 or prediction == "Positive":
             st.success("✅ Sentiment: Positive 😊")
-       # else:
+        else:
             st.error("❌ Sentiment: Negative 😠")
     else:
         st.warning("⚠️ Please enter some text.")
