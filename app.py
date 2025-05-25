@@ -31,3 +31,4 @@ if st.button("Analyze Sentiment"):
             st.error("❌ Sentiment: Negative 😠")
     else:
         st.warning("⚠️ Please enter some text.")
+        
